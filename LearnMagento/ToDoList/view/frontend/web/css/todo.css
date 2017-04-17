@@ -1,0 +1,18 @@
+#todo-list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#todo-list th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#todo-list tr:nth-child(even) {
+    background-color: #F2F2F2
+}
+
+#todo-list th {
+    background-color: #AF9858;
+    color: white;
+}

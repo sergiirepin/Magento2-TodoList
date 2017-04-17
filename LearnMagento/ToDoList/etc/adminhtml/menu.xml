@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="LearnMagento_ToDoList::todo_list"
+             resource="LearnMagento_ToDoList::todo_list"
+             title="TODO list"
+             module="LearnMagento_ToDoList" sortOrder="10"/>
+        <add id="Pulsestorm_MenuTutorial::second_level_example"
+             title="Items"
+             module="LearnMagento_ToDoList"
+             sortOrder="9999"
+             resource="LearnMagento_ToDoList::todo_list"
+             parent="LearnMagento_ToDoList::todo_list"
+             action="todolist/item/index"
+        />
+    </menu>
+</config>

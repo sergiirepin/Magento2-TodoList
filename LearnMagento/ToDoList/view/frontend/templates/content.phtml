@@ -1,0 +1,21 @@
+<h3>TODO:</h3>
+<table id="todo-list">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Date Completed</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($this->getItems() as $item): ?>
+            <tr>
+                <td><?php echo $item->getId() ?></td>
+                <td><?php echo $item->getItemText() ?></td>
+                <td><?php echo $item->getDateCompleted() ?></td>
+                <td><?php echo ($item->getData('is_active')) ? 'Enabled' : 'Disabled' ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
